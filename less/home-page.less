@@ -6,6 +6,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media@mobile{
+      flex-direction:column;
+      width:200%;
+  }
    
     
     .text-content {
@@ -27,6 +31,12 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media@mobile{
+      flex-direction:column-reverse;
+      width: 200%;
+      border:none;
+  }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -42,6 +52,9 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media@mobile{
+      width: 100%;
+  }
     img {
       border-radius: 10px;
     }
@@ -53,11 +66,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media@mobile{
+      flex-direction:column;
+      width: 300%;
+      border:none;
+  }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
     }
   }
+  @media@mobile{
+    flex-direction:column;
+    width: 75%;
+}
 }
 
 .funbus-content{
@@ -67,6 +90,7 @@
   p{
     border-bottom:1px dashed @navigation-border;
   }
+  
 }
 
 .btn{
